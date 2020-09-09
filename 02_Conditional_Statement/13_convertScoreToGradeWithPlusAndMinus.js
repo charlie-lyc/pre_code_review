@@ -1,8 +1,8 @@
 function convertScoreToGradeWithPlusAndMinus(score) {
   let digitTen = Math.floor(score/10);
   let digitOne = score % 10;
-  let gradeChar;
-  let plusMinus;
+  let gradeChar = '';
+  let plusMinus = '';
   if (score === 100) {
     return 'A+';
   } else if (digitTen === 9) {
@@ -22,8 +22,6 @@ function convertScoreToGradeWithPlusAndMinus(score) {
     plusMinus = '-';
   } else if (8 <= digitOne && digitOne <= 9) {
     plusMinus = '+';
-  } else {
-    plusMinus = '';
   }
   return gradeChar + plusMinus;
 }

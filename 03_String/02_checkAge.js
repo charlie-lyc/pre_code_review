@@ -1,7 +1,9 @@
 function checkAge(name, age) {
+  let checkMsg;
   if (age >= 21) {
-    return 'Welcome, ' + name + '!';
+    checkMsg = 'Welcome, ';
   } else {
-    return 'Go home, ' + name + '!';
+    checkMsg = 'Go home, ';
   }
+  return checkMsg + name + '!';
 }
