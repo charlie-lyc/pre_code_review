@@ -8,7 +8,7 @@ function addOneSecond(hour, minute, second) {
     } else {
       minute = 0;
       if (hour + 1 !== 24) {
-        hour = hour +1;
+        hour = hour + 1;
       } else {
         hour = 0;
       }

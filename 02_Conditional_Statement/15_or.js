@@ -2,15 +2,13 @@
 // function or(expression1, expression2) {
 //   if (expression1 || expression2) {
 //     return true;
-//   } else {
-//     return false;
 //   }
+//   return false;
 // }
 
 function or(expression1, expression2) {
   if (!expression1 && !expression2) {
     return false;
-  } else {
-    return true;
   }
+  return true;
 }
