@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- 'meta': self closing tag -->
+        <meta charset="UTF-8" />
+        <title>Hello world</title>
+    </head>
+
+    <body>
+        <h1>Hello world</h1>
+
+        <!-- 'div' VS 'span' -->
+        <div>div 태그는 한줄을 모두 차지합니다.</div>
+        <div>division 2</div>
+        <span>span 태그는 컨텐츠 크기만큼 공간을 차지합니다.</span>
+        <span>span 2</span>
+        <span>span 3</span>
+        <div>division 3</div>
+        
+        <!-- 'img': no need self closing tag -->
+        <img src="https://i.imgur.com/JVAj4tO.jpg"><br>
+
+        <!-- 'a': hypertext reference (link), 'target': open in new tab -->
+        <a href="https://codestates.com" target="_blank">코드스테이츠</a><br>
+        <a href="https://naver.com" target="_blank">네이버</a><br>
+
+        <!-- 'ol', 'ul': ordered, unordered list -->
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3 has nested list
+                <ul>
+                    <li>Item 3-1</li>
+                    <li>Item 3-2</li>
+                </ul>
+            </li>
+        </ol>
+
+        <!-- 'textarea', 'input': various input form -->
+        <div>
+            ID <input type="text" placeholder="type here">
+        </div>
+        <div>
+            Password <input type="password">
+        </div>
+        <div>
+            <!-- 'radio' button: select one with the same group name -->
+            <input type="radio" name="choice" value="a"> a
+            <input type="radio" name="choice" value="b"> b
+        </div>
+        <!-- 'textarea': can make new lines -->
+        <textarea></textarea>
+        <div>
+            <!-- 'checkbox': select multiple -->
+            <input type="checkbox" checked> checked
+            <input type="checkbox"> unchecked
+        </div>
+        <div>
+            <button>Log In</button>
+        </div>
+
+    </body>
+
+</html>

@@ -29,11 +29,18 @@ function compressString(str) {
 
 
 /*
-  JavaScript :
-  3 * 'a' => NaN
-  3 + 'a' => '3a'
+  JavaScript : Loose Equality 적1
+  3 + 'a' => '3a' |  2 + '1' => '31'
+  3 - 'a' => NaN  |  2 - '1' => 1
+  3 * 'a' => NaN  |  2 * '1' => 2
+  3 / 'a' => NaN  |  2 / '2' => 1
+
+
 
   Python :
-  3 * 'a' => 'aaa'
   3 + 'a' => TypeError: unsupported operand type(s) for +: 'int' and 'str'
+  3 - 'a' => TypeError
+  3 * 'a' => 'aaa'
+  3 / 'a' => TypeError
+
 */
