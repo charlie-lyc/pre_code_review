@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS practice</title>
+  </head>
+  <style>
+    /* 같은 css속성이 여러 부모-자식 간에 걸쳐서 사용되었을 때, 결과를 확인해보세요. */
+    /* span {
+    background-color: blue;
+  } */
+​
+    div.red-container span {
+      background-color: pink;
+    }
+​
+    div#center > span#hello {
+      text-align: center;
+      padding: 10px;
+      color: gray;
+    }
+​
+    div > span.green {
+      background-color: greenyellow;
+    }
+​
+    div > span#center-red {
+    /* background-color: brown; */
+      text-align: center;
+      padding: 10px;
+      color: red;
+    }
+  </style>
+​
+  <body>
+    <!--div.red-container에 배경색이 왜 span만 변하는지 고민해보세요.-->
+    <div class="red-container">
+      <span> div > .red-container 내의 span 태그 입니다. </span>
+      <span id="center-red">
+        div > .red-container 내의 #center-red span 태그 입니다.
+      </span>
+      <p>div > .red-container 내의 p 태그 입니다.</p>
+    </div>
+    <span class="red-container"> I'm not red </span>
+    <div id="center">
+      <!--div#center에 배경색이 왜 span만 변하는지 고민해보세요.-->
+      <span> div > #center 내의 span 태그 입니다. </span>
+      <span id="hello">hello</span>
+      <div>div #center 내의 div 태그 입니다.</div>
+    </div>
+    <div>
+      <!--왜 배경색이 green만 변하는지 고민해보세요-->
+​
+      <span class="red"> div 내의 span.red 입니다. </span>
+      <span class="green"> div 내의 span.green 입니다. </span>
+    </div>
+    <!--아래는 실습 해보시기를 권합니다 -->
+    <div>
+      <span id="center-red"> div 내의 span#center-pink 입니다. </span>
+    </div>
+    <div class="red-container">
+      <span> .red-container 내에 있지 않은 span 입니다. </span>
+    </div>
+    <div>
+      <span> #center 내에 있지 않은 span 입니다. </span>
+    </div>
+    <span> div 내에 있지 않은 span입니다. </span>
+  </body>
+</html>

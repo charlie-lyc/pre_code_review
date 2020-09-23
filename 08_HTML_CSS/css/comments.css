@@ -1,0 +1,50 @@
+#writing-section {
+    padding-left: 40px;
+    margin-top: 40px;
+}
+
+#comment-count {
+    font-weight: bold;
+}
+
+#new-comment-content {
+    width: 650px;
+    display: inline-block;
+}
+#new-comment-content::placeholder {
+    color: rgb(212, 212, 205);
+}
+
+#comments {
+    list-style: none;
+}
+
+.comment {
+    margin-top: 20px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.createdAt {
+    color: rgb(212, 212, 205);
+    border-color: rgb(212, 212, 205);
+    border-right-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    width: 165px;
+}
+
+.vote-btns {
+    padding-left: 600px;
+}
+
+.fa-thumbs-up {
+    color: red;
+}
+
+.fa-thumbs-down {
+    color: blue;
+}
+

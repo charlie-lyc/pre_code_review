@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/comments.css">
+        <title>Comments</title>
+    </head>
+    <body>
+
+        <!-- 댓글 쓰기 영역 -->
+        <div id="writing-section">
+            <div id="comment-count">댓글 9</div>
+            <input id="new-comment-content" class="form-control" type="text" placeholder="댓글을 입력해주세요">
+            <button id="register" class="btn btn-primary">등록</button>
+        </div>
+
+        <!-- 댓글 읽기 영역 -->
+        <ul id="comments">
+
+            <!-- 댓글 영역 -->
+            <li class="comment">
+                <div class="username">ouoO****</div>
+                <div class="content">
+                시각 장애인들을 위한 지원이 정말 반갑네요. 앞으로도 이러한 지원이 많았으면 좋겠어요!
+                </div>
+                <span class="createdAt">2018-03-22 23:29:22</span>
+                <div class="vote-btns">
+                    <button class="btn btn-outline-secondary vote-up"><i class="far fa-thumbs-up"></i>0</button>
+                    <button class="btn btn-outline-secondary vote-down"><i class="far fa-thumbs-down"></i>0</button>
+                </div>
+            </li>
+
+            <!-- 댓글 반복 -->
+            <li class="comment">
+                <div class="username">cake****</div>
+                <div class="content">
+                앞으로도 시각 장애인들이 일상생활에서 별다른 문제 없이 살아갈 수 있도록 많은 배려를 해주길 바랍니다.
+                </div>
+                <span class="createdAt">2017-04-06 18:21:58</span>
+                <div class="vote-btns">
+                    <button class="btn btn-outline-secondary vote-up"><i class="far fa-thumbs-up"></i>0</button>
+                    <button class="btn btn-outline-secondary vote-down"><i class="far fa-thumbs-down"></i>1</button>
+                </div>
+            </li>
+
+        </ul>
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/62052681c7.js" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: #9ECFFC;
+    height: 100px;
+    text-align: center;
+    border: solid 5px #8CB6ED;
+    margin-bottom: 30px; 
+}
+
+#header > h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    line-height: 200%;
+}
+
+#tweet {
+    background-color:  #8CB6ED;
+    height: 250px;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+}
+
+.input-label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+form > div {
+    margin-bottom: 10px;
+}
+
+form > div > input {
+    width: 50%;
+}
+
+form > div > textarea {
+    width: 85%;
+    height: 75px;
+}
+
+#tweetBtn {
+    width: 15%;
+    min-width: 75px;
+    height: 35px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#checkNew {
+    background-color: #0A87FB;
+    height: 60px;
+    padding: 10px 30px;
+
+}
+
+#checkNewBtn {
+    width: 15%;
+    min-width: 140px;
+    height: 35px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#comments {
+    background-color: #9ECFFC;
+    height: auto;
+}
+
+#comments > ul {
+    padding: 0 30px;
+    padding-bottom: 10px;
+}
+#comments > ul > li {
+    list-style-type: none;
+    border-bottom: solid 3px white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.date-time {
+    position: absolute;
+    right: 0;
+}
+
+.user-name {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#comments > ul > li > p {
+    margin: 5px 0;
+}
