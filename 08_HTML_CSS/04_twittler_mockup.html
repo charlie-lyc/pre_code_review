@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/twittler.css">
+        <link rel="stylesheet" href="css/twittler.css" />
         <title>twittler</title>
     </head>
 
@@ -16,14 +16,14 @@
 
         <section id="tweet">
 
-            <form action="#" method="#">
+            <form>
                 <div>
                     <label class="input-label" for="nameInput">UserName</label><br>
-                    <input type="text" name="user">
+                    <input id="userName" type="text" autocomplete="off">
                 </div>
                 <div>
                     <label class="input-label" for="commentInput">Comment</label><br>
-                    <textarea type="text" name="comment"></textarea>
+                    <textarea id="commentContent" type="text" autocomplete="off"></textarea>
                 </div>
                 <button id="tweetBtn" type="submit">Tweet!</button>
             </form>
@@ -64,6 +64,9 @@
             </ul>
 
         </section>
+        
+        <!-- Essentially check 'Form Validation' -->
+        <script src="js/twittler.js"></script>
 
     </body>
 </html>
