@@ -3,17 +3,40 @@ function findShortestWord(arr) {
   if (arr.length === 0) {
     return '';
   }
-  let longtestStr = arr.reduce(function(acc, val) {
-    if (typeof val === 'string' && acc.length < val.length) {
+
+  let newArr = arr.filter(function(ar) {
+    return typeof ar === 'string';
+  });
+  if (newArr.length === 0) {
+    return '';
+  }
+  
+  return newArr.reduce(function(acc, val) {
+    if (acc.length > val.length) {
       return val;
     }
     return acc;
-  }, '');
-  let maybeShortest = longtestStr;
-  arr.forEach(function(ar) {
-    if (typeof ar === 'string' && ar.length < maybeShortest.length) {
-      maybeShortest = ar;
-    }
   });
-  return maybeShortest;
 }
+
+/* Use "reduce()", "map()", "filter()", "forEach()" !!! */
+// function findShortestWord(arr) {
+//   if (arr.length === 0) {
+//     return '';
+//   }
+//
+//   let longtestStr = arr.reduce(function(acc, val) {
+//     if (typeof val === 'string' && acc.length < val.length) {
+//       return val;
+//     }
+//     return acc;
+//   }, '');
+
+//   let maybeShortest = longtestStr;
+//   arr.forEach(function(ar) {
+//     if (typeof ar === 'string' && ar.length < maybeShortest.length) {
+//       maybeShortest = ar;
+//     }
+//   });
+//   return maybeShortest;
+// }
