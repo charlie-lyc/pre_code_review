@@ -1,3 +1,5 @@
+// 점수를 입력받아 점수에 해당하는 등급을 리턴해야 합니다.
+
 function convertScoreToGradeWithPlusAndMinus(score) {
   let digitTen = Math.floor(score/10);
   let digitOne = score % 10;

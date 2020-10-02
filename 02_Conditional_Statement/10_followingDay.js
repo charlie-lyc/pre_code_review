@@ -1,3 +1,5 @@
+// 요일을 입력받아 해당 요일의 다음 요일을 리턴해야 합니다.
+
 function followingDay(day) {
   let nextDay;
   if (day === '월요일') {

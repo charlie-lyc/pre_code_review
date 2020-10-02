@@ -1,3 +1,5 @@
+// 임의의 값을 입력받아 falsy 값인지 여부를 리턴해야 합니다.
+
 function isFalsy(anything) {
   if (!anything) {
     return true;

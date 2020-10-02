@@ -1,3 +1,5 @@
+// 시, 분, 초를 입력받아 1초를 더한 결과값을 특정 형태의 메시지로 리턴해야 합니다.
+
 function addOneSecond(hour, minute, second) {
   if (second + 1 !== 60) {
     second = second + 1;
