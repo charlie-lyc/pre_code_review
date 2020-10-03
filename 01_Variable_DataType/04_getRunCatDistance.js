@@ -7,6 +7,8 @@
  */
 function getRunCatDistance(speed, time) {
   let distance;
+  // Express and Assign
   distance = speed * time;
+  // Return Value
   return distance;
 }

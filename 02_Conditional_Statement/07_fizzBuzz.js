@@ -2,14 +2,16 @@
 
 function fizzBuzz(num) {
   // TODO: 여기에 코드를 작성합니다.
-  if (num % 3 === 0 && num % 5 === 0) {
+  let divide3 = num % 3;
+  let divide5 = num % 5;
+  if (divide3 === 0 && divide5 === 0) {
     return 'FizzBuzz';
-  } else if (num % 3 !== 0 && num % 5 !== 0) {
-    return 'No FizzBuzz';
-  } else if(num % 3 === 0) {
+  } else if (divide3 === 0) {
     return 'Fizz';
-  } else if (num % 5 === 0){
+  } else if (divide5 === 0) {
     return 'Buzz';
+  } else if (divide3 !== 0 || divide5 !== 0) {
+    return 'No FizzBuzz';
   }
 }
 

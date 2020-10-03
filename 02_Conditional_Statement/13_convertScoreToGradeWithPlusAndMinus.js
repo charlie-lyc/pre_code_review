@@ -1,29 +1,34 @@
 // 점수를 입력받아 점수에 해당하는 등급을 리턴해야 합니다.
 
 function convertScoreToGradeWithPlusAndMinus(score) {
-  let digitTen = Math.floor(score/10);
-  let digitOne = score % 10;
-  let gradeChar = '';
-  let plusMinus = '';
-  if (score === 100) {
-    return 'A+';
-  } else if (digitTen === 9) {
-    gradeChar = 'A';
-  } else if (digitTen === 8) {
-    gradeChar = 'B';
-  } else if (digitTen === 7) {
-    gradeChar = 'C';
-  } else if (digitTen === 6) {
-    gradeChar =  'D';
-  } else if (0 <= digitTen && digitTen <= 5) {
-    return 'F';
-  } else {
+  let share = Math.floor(score / 10);
+  let remain = score % 10;
+
+  let grade;
+  if (0 > score || score > 100) {
     return 'INVALID SCORE';
+  } else if (share === 10) {
+    return 'A+';
+  } else if (share === 9) {
+    grade = 'A';
+  } else if (share === 8) {
+    grade = 'B';
+  } else if (share === 7) {
+    grade = 'C';
+  } else if (share === 6) {
+    grade = 'D';
+  } else {
+    return 'F';
   }
-  if (0 <= digitOne && digitOne <= 2) {
-    plusMinus = '-';
-  } else if (8 <= digitOne && digitOne <= 9) {
-    plusMinus = '+';
+
+  let minusPlus;
+  if (0 <= remain && remain <= 2) {
+    minusPlus = '-';
+  } else if (8 <= remain && remain <= 9) {
+    minusPlus = '+';
+  } else {
+    minusPlus = '';
   }
-  return gradeChar + plusMinus;
+
+  return grade + minusPlus;
 }

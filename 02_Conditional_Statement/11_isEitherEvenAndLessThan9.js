@@ -2,12 +2,9 @@
  * EitherEven: 적어도 하나의 수는 짝수이다.
  * LessThan9: 두 수 모두 9보다 작다.
  */
- 
+
 function isEitherEvenAndLessThan9(num1, num2) {
-  if ((num1 % 2 === 0 || num2 % 2 === 0) && (9 > num1 && num2 < 9)) {
-    return true;
-  }
-  return false;
+  return (num1 % 2 === 0 || num2 % 2 === 0) && (num1 < 9 && num2 < 9);
 }
 
 // function isEitherEvenAndLessThan9(num1, num2) {
