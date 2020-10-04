@@ -1,17 +1,15 @@
-/*** 초기화 값을 잘 정하면 훨씬 심플하게 만들 수 있다. ***/
+// 두 개의 수를 입력받아 두 수를 포함해 두 수 사이의 수 중 2의 배수의 개수를 리턴해야 합니다.
+
 function makeMultiplesOfDigit2(num1, num2) {
-  let count = 0;
-  let a, b;
-  if (num1 >= num2) {
-    a = num2;
-    b = num1;
-  } else{
-    a = num1;
-    b = num2;
+  let newNum1 = num1;
+  let newNum2 = num2;
+  if (num1 > num2) {
+    newNum1 = num2;
+    newNum2 = num1;
   }
-  for (let i = a; i < b+1; i++) {
-    // 0은 2의 배수가 아니라고 했으므로 확인대상에서 제외
-    if (i % 2 === 0 && i !== 0){
+  let count = 0;
+  for (let i = newNum1; i < newNum2 + 1; i ++) {
+    if (i !== 0 && i % 2 === 0) {
       count ++;
     }
   }

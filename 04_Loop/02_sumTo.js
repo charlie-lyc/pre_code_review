@@ -1,7 +1,17 @@
+// 수를 입력받아 0부터 해당 수까지의 합을 리턴해야 합니다.
+
 function sumTo(num) {
-  let sumToNum = 0;
-  for (let i = 1; i < num+1; i++) {
-    sumToNum = sumToNum + i;
+  /* 초기화의 중요성 */
+  let sum = 0;
+  for (let i = 0; i < num + 1; i ++) {
+    sum += i;
   }
-  return sumToNum;
+  return sum;
 }
+
+/** 초기화의 중요성 :
+ * 만약 "let sumToNum;"으로 선언만 했다면
+ * 최초의 연산 "sum + i"의 결과는 "undefined"가 되어버린다.
+ * 그렇다고 습관적으로 초기화값을 정해서도 안된다.
+ * 반드시 문제해결을 위한 방식에 근거하여 의미있는 초기화값을 정해야 한다.
+ */
