@@ -4,5 +4,12 @@ function reverseArr(arr) {
   if (arr.length === 0) {
     return [];
   }
-  return [arr[arr.length-1]].concat(reverseArr(arr.slice(0, arr.length-1)));
+  return reverseArr(arr.slice(1)).concat(arr[0]);
 }
+
+// function reverseArr(arr) {
+//   if (arr.length === 0) {
+//     return [];
+//   }
+//   return [arr[arr.length-1]].concat(reverseArr(arr.slice(0, arr.length-1)));
+// }

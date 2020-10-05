@@ -4,8 +4,15 @@ function and(arr) {
   if (arr.length === 0) {
     return true;
   }
-  if (!arr[0]) {
-    return false;
-  }
-  return and(arr.slice(1));
+  return arr[0] && and(arr.slice(1));
 }
+
+// function and(arr) {
+//   if (arr.length === 0) {
+//     return true;
+//   }
+//   if (!arr[0]) {
+//     return false;
+//   }
+//   return and(arr.slice(1));
+// }
