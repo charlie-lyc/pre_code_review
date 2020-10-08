@@ -9,7 +9,6 @@ function getType(anything) {
   return typeof anything;
 }
 
-
 /** 기본적으로 "typeof"가 식별하는 자료형 6가지
  * 1. 'string'
  * 2. 'number'
