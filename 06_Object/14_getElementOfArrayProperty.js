@@ -16,7 +16,6 @@ function getElementOfArrayProperty(obj, key, index) {
 //   }
 // }
 
-
 // function getElementOfArrayProperty(obj, key, index) {
 //   for (let key in obj) {
 //     if (Array.isArray(obj[key])) {

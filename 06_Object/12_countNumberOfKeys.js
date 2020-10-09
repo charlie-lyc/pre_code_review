@@ -5,9 +5,10 @@ function countNumberOfKeys(obj) {
 }
 
 /**
- * 객체내 키들을 for loop로 순회하면서 key의 갯수를 구할수 있게 count가 작동
+ * "Object.keys(obj)" : obj객체내의 key들로 구성된 배열을 반환
  */
 
+/* 객체내 키들을 for loop로 순회하면서 key의 갯수를 구할수 있게 count가 작동 */
 // function countNumberOfKeys(obj) {
 //   let count = 0;
 //   for (let key in obj) {

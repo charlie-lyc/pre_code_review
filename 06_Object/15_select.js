@@ -11,8 +11,8 @@ function select(arr, obj) {
 }
 
 /**
- * "key in object" => true or false
- * "index of array" => true of false
+ * "key in obj" => true or false
+ * "index of arr" => true of false
  */
 
 // function select(arr, obj) {

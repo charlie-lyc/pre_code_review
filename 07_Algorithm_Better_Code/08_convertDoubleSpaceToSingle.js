@@ -6,6 +6,14 @@ function convertDoubleSpaceToSingle(str) {
   return str.replace(/\s+/g, ' ');
 }
 
+/**
+ * "str.replace()" : String에서 특정 문자를 지우거나 다른 문자로 바꾸는 메소드
+ * => 다만 "Regular Expression"에 대해 어느정도 알고 있어야 원활하게 사용 할 수 있다.
+ *
+ * "arr.splice()" : Array에서 특정 인덱스의 요소를 지우거나 끼워 넣는 메소드
+ * => 잘 활용하면 배열 데이터를 처리하는데 유용하다.
+ */
+
 /*** Linear Search === Sequential Search ***/
 // function convertDoubleSpaceToSingle(str) {
 //   let convertedStr = '';
