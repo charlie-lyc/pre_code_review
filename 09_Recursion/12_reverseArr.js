@@ -11,5 +11,14 @@ function reverseArr(arr) {
 //   if (arr.length === 0) {
 //     return [];
 //   }
-//   return [arr[arr.length-1]].concat(reverseArr(arr.slice(0, arr.length-1)));
+//   let head = arr.slice(0, arr.length - 1);
+//   let tail = arr.slice(arr.length - 1)
+//   return tail.concat(reverseArr(head));
+// }
+
+// function reverseArr(arr) {
+//   if (arr.length === 0) {
+//     return [];
+//   }
+//   return arr.slice(arr.length-1).concat(reverseArr(arr.slice(0, arr.length-1)));
 // }
