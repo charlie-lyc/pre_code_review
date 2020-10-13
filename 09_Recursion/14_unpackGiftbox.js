@@ -8,9 +8,6 @@
 // 빈 배열 또는 빈 문자열을 입력받은 경우, false를 리턴해야 합니다.
 
 function unpackGiftbox(giftBox, wish) {
-  if (giftBox.length === 0 || wish === '') {
-    return false;
-  }
   for (let i = 0; i < giftBox.length; i ++) {
     if (giftBox[i] === wish) {
       return true;
