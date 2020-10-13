@@ -14,34 +14,11 @@ function test7(arr, id) {
     if (arr[i]['id'] === id) {
       return arr[i];
     } else if ('children' in arr[i]) {
-      return test7(arr[i]['children'], id);
+      let result = test7(arr[i]['children'], id);
+      if (result !== null) {
+        return result;
+      }
     }
   }
   return null;
 }
-
-// const Lannisters = [
-//       {
-//         id: 55,
-//         name: 'Tywin Lannister',
-//         children: [
-//           {
-//             id: 57,
-//             name: 'Cersei Lannister',
-//             children: [
-//               { id: 12, name: 'Joffrey Baratheon' },
-//               { id: 98, name: 'Myrcella Baratheon' },
-//               { id: 25, name: 'Tommen Baratheon' },
-//             ],
-//           },
-//           {
-//             id: 62,
-//             name: 'Jaime Lannister',
-//           },
-//           {
-//             id: 69,
-//             name: 'Tyrion Lannister',
-//           },
-//         ],
-//       },
-//     ];
