@@ -1,5 +1,4 @@
-// 사원들의 정보를 배열로 입력받아 HTML 엘리먼트의 형태로 변형해서 ul#container에 append 합니다.
-// 객체를 요소로 갖는 배열
+// 사원들의 정보를 갖는 객체를 요소로 하는 배열을 입력받아 HTML 엘리먼트의 형태로 변형해서 ul#container에 append 합니다.
 // arr[i]는 'firstName', 'lastName', 'age', 'role' 등의 속성을 갖는 객체
 // 'firstName', 'lastName', 'role' 등의 속성은 string 타입
 // 'age' 속성은 number 타입 (1 이상의 정수)
