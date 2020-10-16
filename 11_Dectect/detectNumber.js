@@ -24,24 +24,29 @@
  */
  function detectNetwork(cardNumber) {
 
-  const prefix1 = cardNumber[0];
-  const prefix2 = cardNumber[1];
-  const prefix3 = cardNumber.substring(0, 3);
-  const prefix4 = cardNumber.substring(0, 4);
-  const lenOfNum = cardNumber.length;
+   const prefix1 = cardNumber.substring(0, 1);
+   const prefix2 = cardNumber.substring(0, 2);
+   const prefix3 = cardNumber.substring(0, 3);
+   const prefix4 = cardNumber.substring(0, 4);
+   const prefix6 = cardNumber.substring(0, 6)
+   const lenOfNum = cardNumber.length;
 
-  if (prefix1 === '3' && (prefix2 === '8' || prefix2 === '9') && lenOfNum === 14) {
-    return "Diner's Club";
-  } else if (prefix1 === '3' && (prefix2 === '4' || prefix2 === '7') && lenOfNum === 15) {
-    return 'American Express';
-  } else if (prefix1 === '4' && (lenOfNum === 13 || lenOfNum === 16 || lenOfNum === 19)) {
-    return 'Visa';
-  } else if (prefix1 === '5' && (1 <= Number(prefix2) && Number(prefix2) <= 5) && lenOfNum === 16) {
-    return 'MasterCard';
-  } else if (((prefix1 === '6' &&  prefix2 === '5') || (644 <= Number(prefix3) && Number(prefix3) <= 649) || (prefix4 === '6011')) && (lenOfNum === 16 || lenOfNum === 19)) {
-    return 'Discover';
-  } else if ((prefix4 === '5018' || prefix4 === '5020' || prefix4 === '5038' || prefix4 === '6034') && (12 <= lenOfNum || lenOfNum <= 19)) {
-    return 'Maestro';
-  }
+   if ((prefix2 === '38' || prefix2 === '39') && lenOfNum === 14) {
+     return "Diner's Club";
+   } else if ((prefix2 === '34' || prefix2 === '37') && lenOfNum === 15) {
+     return 'American Express';
+   } else if ((prefix6 === '564182' || prefix6 === '633110' || prefix4 === '4903' || prefix4 === '4905' || prefix4 === '4911' || prefix4 === '4936' || prefix4 === '6333' || prefix4 === '6759') && (lenOfNum === 16 || lenOfNum === 18 || lenOfNum === 19)) {
+     return 'Switch';
+   } else if (prefix1 === '4' && (lenOfNum === 13 || lenOfNum === 16 || lenOfNum === 19)) {
+     return 'Visa';
+   } else if ((51 <= Number(prefix2) && Number(prefix2) <= 55) && lenOfNum === 16) {
+     return 'MasterCard';
+   } else if ((prefix2 === '65' || (644 <= Number(prefix3) && Number(prefix3) <= 649) || prefix4 === '6011') && (lenOfNum === 16 || lenOfNum === 19)) {
+     return 'Discover';
+   } else if ((prefix4 === '5018' || prefix4 === '5020' || prefix4 === '5038' || prefix4 === '6034') && (12 <= lenOfNum && lenOfNum <= 19)) {
+     return 'Maestro';
+   } else if (((622126 <= Number(prefix6) && Number(prefix6) <= 622925) || (6282 <= Number(prefix4) && Number(prefix4) <= 6288) || (624 <= Number(prefix3) && Number(prefix3) <= 626))  && (16 <= lenOfNum && lenOfNum <= 19)){
+     return 'China UnionPay'
+   }
 
 }
