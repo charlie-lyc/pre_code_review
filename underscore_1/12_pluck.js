@@ -13,7 +13,7 @@ _.pluck = function (arr, keyOrIdx) {
   });
 };
 
-// _.pluck을 _.each를 사용해 구현하면 아래와 같습니다.
+/* _.each를 사용해 구현하면 아래와 같습니다. */
 // _.pluck = function (arr, keyOrIdx) {
 //   let result = [];
 //

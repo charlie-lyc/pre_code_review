@@ -10,15 +10,13 @@
 //  _.reduce(arr, iteratee, initVal)
 //  iteratee(acc, ele, idx, arr)
 _.reduce = function (arr, iteratee, initVal) {
-  let _arr = _.slice(arr);
   let acc = initVal;
   if (initVal === undefined) {
-    acc = _arr[0];
-    _arr.shift();
+    acc = arr.shift();
   }
 
-  _.each(_arr, function(ele, idx, _arr) {
-    acc = iteratee(acc, ele, idx, _arr);
+  _.each(arr, function(ele, idx, arr) {
+    acc = iteratee(acc, ele, idx, arr);
   });
 
   return acc;
