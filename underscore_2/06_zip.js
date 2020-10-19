@@ -6,14 +6,15 @@
 // 특정 index에 요소가 없는 경우, undefined를 사용합니다.
 // _.each, _.reduce, _.pluck 중 하나 이상을 반드시 사용하여야 합니다.
 _.zip = function (...args) {
-  let longest = _.reduce(args, function(acc, val) {
+  let longestLength = _.reduce(args, function(acc, val) {
     if (acc < val.length) return val.length;
     return acc;
   }, 0);
 
   let result = [];
-  for (let i = 0; i < longest; i ++) {
+  for (let i = 0; i < longestLength; i ++) {
     result.push(_.pluck(args, i));
   }
+
   return result;
 };
